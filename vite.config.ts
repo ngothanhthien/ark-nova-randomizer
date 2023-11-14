@@ -14,9 +14,9 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,webp}']
       },
       manifest: {
-        name: 'Spirit Island Solo App',
-        short_name: 'Spirit Island',
-        description: 'Spirit Island Solo App',
+        name: 'Ark Nova Helper',
+        short_name: 'Ark Nova Helper',
+        description: 'Ark Nova Helper',
         theme_color: '#0f172a',
         orientation: 'landscape-primary',
         display: 'fullscreen',

@@ -134,7 +134,7 @@ function doNewGame() {
                 class="rounded"
                 :src="`/img/project/${project}.webp`"
                 alt="Ark nova action card"
-                @click="currentCardZoom = `/img/action/${project}.webp`"
+                @click="currentCardZoom = `/img/project/${project}.webp`"
             />
           </div>
         </div>

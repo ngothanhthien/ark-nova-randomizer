@@ -26,6 +26,8 @@ const buttonText = computed(() => {
         return 'Finish Invade'
       }
       return `Invade (${gameStore.currentInfectionRate - totalInvade.value})`
+    case 'lose':
+      return 'Lose!'
   }
 })
 
@@ -42,6 +44,10 @@ function buttonClick() {
       }
       break
     case 'draw':
+      if (gameStore.revolts.length === 0) {
+        phase.value = 'Lose!'
+        return
+      }
       if (totalDraw.value === 2) {
         phase.value = 'invade'
         totalDraw.value = 0

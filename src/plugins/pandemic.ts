@@ -17,7 +17,7 @@ export function setupActionCard(totalAction: number, totalEruption: number) {
   }
   random.shuffle(randomExtra)
   for(let i = 0; i < totalEruption; i++) {
-    const part = Array.from(Array(totalEruption).keys()) as Array<number | string>
+    const part = Array.from(Array(totalEachPart - 1).keys()) as Array<number | string>
     if (randomExtra[i] !== 'x') {
       part.push(randomExtra[i])
     }
